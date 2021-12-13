@@ -4,7 +4,7 @@ permalink: /1.3/acme/v1alpha2/challenge/
 
 # acme.v1alpha2.challenge
 
-Challenge is a type to represent a Challenge request with an ACME server
+"Challenge is a type to represent a Challenge request with an ACME server"
 
 ## Index
 
@@ -170,7 +170,7 @@ new returns an instance of Challenge
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -178,7 +178,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -186,7 +186,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -196,7 +196,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -204,7 +204,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -212,7 +212,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -220,7 +220,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -228,7 +228,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 ### fn metadata.withFinalizersMixin
 
@@ -236,7 +236,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 **Note:** This function appends passed data to existing values
 
@@ -246,11 +246,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -258,7 +254,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -266,7 +262,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -274,7 +270,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -284,7 +280,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -292,7 +288,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -302,7 +298,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -310,9 +306,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -320,7 +314,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -328,7 +322,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -338,9 +332,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -348,9 +340,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
-
-DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.
+"SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release."
 
 ### fn metadata.withUid
 
@@ -358,9 +348,7 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec
 
@@ -372,7 +360,7 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 withAuthzURL(authzURL)
 ```
 
-AuthzURL is the URL to the ACME Authorization resource that this challenge is a part of.
+"AuthzURL is the URL to the ACME Authorization resource that this challenge is a part of."
 
 ### fn spec.withDnsName
 
@@ -380,7 +368,7 @@ AuthzURL is the URL to the ACME Authorization resource that this challenge is a 
 withDnsName(dnsName)
 ```
 
-DNSName is the identifier that this challenge is for, e.g. example.com. If the requested DNSName is a 'wildcard', this field MUST be set to the non-wildcard domain, e.g. for `*.example.com`, it must be `example.com`.
+"DNSName is the identifier that this challenge is for, e.g. example.com. If the requested DNSName is a 'wildcard', this field MUST be set to the non-wildcard domain, e.g. for `*.example.com`, it must be `example.com`."
 
 ### fn spec.withKey
 
@@ -388,7 +376,7 @@ DNSName is the identifier that this challenge is for, e.g. example.com. If the r
 withKey(key)
 ```
 
-Key is the ACME challenge key for this challenge For HTTP01 challenges, this is the value that must be responded with to complete the HTTP01 challenge in the format: `<private key JWK thumbprint>.<key from acme server for challenge>`. For DNS01 challenges, this is the base64 encoded SHA256 sum of the `<private key JWK thumbprint>.<key from acme server for challenge>` text that must be set as the TXT record content.
+"Key is the ACME challenge key for this challenge For HTTP01 challenges, this is the value that must be responded with to complete the HTTP01 challenge in the format: `<private key JWK thumbprint>.<key from acme server for challenge>`. For DNS01 challenges, this is the base64 encoded SHA256 sum of the `<private key JWK thumbprint>.<key from acme server for challenge>` text that must be set as the TXT record content."
 
 ### fn spec.withToken
 
@@ -396,7 +384,7 @@ Key is the ACME challenge key for this challenge For HTTP01 challenges, this is 
 withToken(token)
 ```
 
-Token is the ACME challenge token for this challenge. This is the raw value returned from the ACME server.
+"Token is the ACME challenge token for this challenge. This is the raw value returned from the ACME server."
 
 ### fn spec.withType
 
@@ -404,7 +392,7 @@ Token is the ACME challenge token for this challenge. This is the raw value retu
 withType(type)
 ```
 
-Type is the type of ACME challenge this resource represents. One of "http-01" or "dns-01".
+"Type is the type of ACME challenge this resource represents. One of \"http-01\" or \"dns-01\"."
 
 ### fn spec.withUrl
 
@@ -412,7 +400,7 @@ Type is the type of ACME challenge this resource represents. One of "http-01" or
 withUrl(url)
 ```
 
-URL is the URL of the ACME Challenge resource for this challenge. This can be used to lookup details about the status of this challenge.
+"URL is the URL of the ACME Challenge resource for this challenge. This can be used to lookup details about the status of this challenge."
 
 ### fn spec.withWildcard
 
@@ -420,11 +408,11 @@ URL is the URL of the ACME Challenge resource for this challenge. This can be us
 withWildcard(wildcard)
 ```
 
-Wildcard will be true if this challenge is for a wildcard identifier, for example '*.example.com'.
+"Wildcard will be true if this challenge is for a wildcard identifier, for example '*.example.com'."
 
 ## obj spec.issuerRef
 
-IssuerRef references a properly configured ACME-type Issuer which should be used to create this Challenge. If the Issuer does not exist, processing will be retried. If the Issuer is not an 'ACME' Issuer, an error will be returned and the Challenge will be marked as failed.
+"IssuerRef references a properly configured ACME-type Issuer which should be used to create this Challenge. If the Issuer does not exist, processing will be retried. If the Issuer is not an 'ACME' Issuer, an error will be returned and the Challenge will be marked as failed."
 
 ### fn spec.issuerRef.withGroup
 
@@ -432,7 +420,7 @@ IssuerRef references a properly configured ACME-type Issuer which should be used
 withGroup(group)
 ```
 
-Group of the resource being referred to.
+"Group of the resource being referred to."
 
 ### fn spec.issuerRef.withKind
 
@@ -440,7 +428,7 @@ Group of the resource being referred to.
 withKind(kind)
 ```
 
-Kind of the resource being referred to.
+"Kind of the resource being referred to."
 
 ### fn spec.issuerRef.withName
 
@@ -448,15 +436,15 @@ Kind of the resource being referred to.
 withName(name)
 ```
 
-Name of the resource being referred to.
+"Name of the resource being referred to."
 
 ## obj spec.solver
 
-Solver contains the domain solving configuration that should be used to solve this challenge resource.
+"Solver contains the domain solving configuration that should be used to solve this challenge resource."
 
 ## obj spec.solver.dns01
 
-Configures cert-manager to attempt to complete authorizations by performing the DNS01 challenge flow.
+"Configures cert-manager to attempt to complete authorizations by performing the DNS01 challenge flow."
 
 ### fn spec.solver.dns01.withCnameStrategy
 
@@ -464,11 +452,11 @@ Configures cert-manager to attempt to complete authorizations by performing the 
 withCnameStrategy(cnameStrategy)
 ```
 
-CNAMEStrategy configures how the DNS01 provider should handle CNAME records when found in DNS zones.
+"CNAMEStrategy configures how the DNS01 provider should handle CNAME records when found in DNS zones."
 
 ## obj spec.solver.dns01.acmedns
 
-Use the 'ACME DNS' (https://github.com/joohoi/acme-dns) API to manage DNS01 challenge records.
+"Use the 'ACME DNS' (https://github.com/joohoi/acme-dns) API to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.acmedns.withHost
 
@@ -480,7 +468,7 @@ withHost(host)
 
 ## obj spec.solver.dns01.acmedns.accountSecretRef
 
-A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.
+"A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field."
 
 ### fn spec.solver.dns01.acmedns.accountSecretRef.withKey
 
@@ -488,7 +476,7 @@ A reference to a specific 'key' within a Secret resource. In some instances, `ke
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.acmedns.accountSecretRef.withName
 
@@ -496,11 +484,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.akamai
 
-Use the Akamai DNS zone management API to manage DNS01 challenge records.
+"Use the Akamai DNS zone management API to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.akamai.withServiceConsumerDomain
 
@@ -512,7 +500,7 @@ withServiceConsumerDomain(serviceConsumerDomain)
 
 ## obj spec.solver.dns01.akamai.accessTokenSecretRef
 
-A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.
+"A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field."
 
 ### fn spec.solver.dns01.akamai.accessTokenSecretRef.withKey
 
@@ -520,7 +508,7 @@ A reference to a specific 'key' within a Secret resource. In some instances, `ke
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.akamai.accessTokenSecretRef.withName
 
@@ -528,11 +516,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.akamai.clientSecretSecretRef
 
-A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.
+"A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field."
 
 ### fn spec.solver.dns01.akamai.clientSecretSecretRef.withKey
 
@@ -540,7 +528,7 @@ A reference to a specific 'key' within a Secret resource. In some instances, `ke
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.akamai.clientSecretSecretRef.withName
 
@@ -548,11 +536,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.akamai.clientTokenSecretRef
 
-A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.
+"A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field."
 
 ### fn spec.solver.dns01.akamai.clientTokenSecretRef.withKey
 
@@ -560,7 +548,7 @@ A reference to a specific 'key' within a Secret resource. In some instances, `ke
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.akamai.clientTokenSecretRef.withName
 
@@ -568,11 +556,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.azuredns
 
-Use the Microsoft Azure DNS API to manage DNS01 challenge records.
+"Use the Microsoft Azure DNS API to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.azuredns.withClientID
 
@@ -580,7 +568,7 @@ Use the Microsoft Azure DNS API to manage DNS01 challenge records.
 withClientID(clientID)
 ```
 
-if both this and ClientSecret are left unset MSI will be used
+"if both this and ClientSecret are left unset MSI will be used"
 
 ### fn spec.solver.dns01.azuredns.withEnvironment
 
@@ -620,11 +608,11 @@ withSubscriptionID(subscriptionID)
 withTenantID(tenantID)
 ```
 
-when specifying ClientID and ClientSecret then this field is also needed
+"when specifying ClientID and ClientSecret then this field is also needed"
 
 ## obj spec.solver.dns01.azuredns.clientSecretSecretRef
 
-if both this and ClientID are left unset MSI will be used
+"if both this and ClientID are left unset MSI will be used"
 
 ### fn spec.solver.dns01.azuredns.clientSecretSecretRef.withKey
 
@@ -632,7 +620,7 @@ if both this and ClientID are left unset MSI will be used
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.azuredns.clientSecretSecretRef.withName
 
@@ -640,11 +628,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.clouddns
 
-Use the Google Cloud DNS API to manage DNS01 challenge records.
+"Use the Google Cloud DNS API to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.clouddns.withHostedZoneName
 
@@ -652,7 +640,7 @@ Use the Google Cloud DNS API to manage DNS01 challenge records.
 withHostedZoneName(hostedZoneName)
 ```
 
-HostedZoneName is an optional field that tells cert-manager in which Cloud DNS zone the challenge record has to be created. If left empty cert-manager will automatically choose a zone.
+"HostedZoneName is an optional field that tells cert-manager in which Cloud DNS zone the challenge record has to be created. If left empty cert-manager will automatically choose a zone."
 
 ### fn spec.solver.dns01.clouddns.withProject
 
@@ -664,7 +652,7 @@ withProject(project)
 
 ## obj spec.solver.dns01.clouddns.serviceAccountSecretRef
 
-A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.
+"A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field."
 
 ### fn spec.solver.dns01.clouddns.serviceAccountSecretRef.withKey
 
@@ -672,7 +660,7 @@ A reference to a specific 'key' within a Secret resource. In some instances, `ke
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.clouddns.serviceAccountSecretRef.withName
 
@@ -680,11 +668,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.cloudflare
 
-Use the Cloudflare API to manage DNS01 challenge records.
+"Use the Cloudflare API to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.cloudflare.withEmail
 
@@ -692,11 +680,11 @@ Use the Cloudflare API to manage DNS01 challenge records.
 withEmail(email)
 ```
 
-Email of the account, only required when using API key based authentication.
+"Email of the account, only required when using API key based authentication."
 
 ## obj spec.solver.dns01.cloudflare.apiKeySecretRef
 
-API key to use to authenticate with Cloudflare. Note: using an API token to authenticate is now the recommended method as it allows greater control of permissions.
+"API key to use to authenticate with Cloudflare. Note: using an API token to authenticate is now the recommended method as it allows greater control of permissions."
 
 ### fn spec.solver.dns01.cloudflare.apiKeySecretRef.withKey
 
@@ -704,7 +692,7 @@ API key to use to authenticate with Cloudflare. Note: using an API token to auth
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.cloudflare.apiKeySecretRef.withName
 
@@ -712,11 +700,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.cloudflare.apiTokenSecretRef
 
-API token used to authenticate with Cloudflare.
+"API token used to authenticate with Cloudflare."
 
 ### fn spec.solver.dns01.cloudflare.apiTokenSecretRef.withKey
 
@@ -724,7 +712,7 @@ API token used to authenticate with Cloudflare.
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.cloudflare.apiTokenSecretRef.withName
 
@@ -732,15 +720,15 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.digitalocean
 
-Use the DigitalOcean DNS API to manage DNS01 challenge records.
+"Use the DigitalOcean DNS API to manage DNS01 challenge records."
 
 ## obj spec.solver.dns01.digitalocean.tokenSecretRef
 
-A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field.
+"A reference to a specific 'key' within a Secret resource. In some instances, `key` is a required field."
 
 ### fn spec.solver.dns01.digitalocean.tokenSecretRef.withKey
 
@@ -748,7 +736,7 @@ A reference to a specific 'key' within a Secret resource. In some instances, `ke
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.digitalocean.tokenSecretRef.withName
 
@@ -756,11 +744,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.rfc2136
 
-Use RFC2136 ("Dynamic Updates in the Domain Name System") (https://datatracker.ietf.org/doc/rfc2136/) to manage DNS01 challenge records.
+"Use RFC2136 (\"Dynamic Updates in the Domain Name System\") (https://datatracker.ietf.org/doc/rfc2136/) to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.rfc2136.withNameserver
 
@@ -768,7 +756,7 @@ Use RFC2136 ("Dynamic Updates in the Domain Name System") (https://datatracker.i
 withNameserver(nameserver)
 ```
 
-The IP address or hostname of an authoritative DNS server supporting RFC2136 in the form host:port. If the host is an IPv6 address it must be enclosed in square brackets (e.g [2001:db8::1]) ; port is optional. This field is required.
+"The IP address or hostname of an authoritative DNS server supporting RFC2136 in the form host:port. If the host is an IPv6 address it must be enclosed in square brackets (e.g [2001:db8::1])\u00a0; port is optional. This field is required."
 
 ### fn spec.solver.dns01.rfc2136.withTsigAlgorithm
 
@@ -776,7 +764,7 @@ The IP address or hostname of an authoritative DNS server supporting RFC2136 in 
 withTsigAlgorithm(tsigAlgorithm)
 ```
 
-The TSIG Algorithm configured in the DNS supporting RFC2136. Used only when ``tsigSecretSecretRef`` and ``tsigKeyName`` are defined. Supported values are (case-insensitive): ``HMACMD5`` (default), ``HMACSHA1``, ``HMACSHA256`` or ``HMACSHA512``.
+"The TSIG Algorithm configured in the DNS supporting RFC2136. Used only when ``tsigSecretSecretRef`` and ``tsigKeyName`` are defined. Supported values are (case-insensitive): ``HMACMD5`` (default), ``HMACSHA1``, ``HMACSHA256`` or ``HMACSHA512``."
 
 ### fn spec.solver.dns01.rfc2136.withTsigKeyName
 
@@ -784,11 +772,11 @@ The TSIG Algorithm configured in the DNS supporting RFC2136. Used only when ``ts
 withTsigKeyName(tsigKeyName)
 ```
 
-The TSIG Key name configured in the DNS. If ``tsigSecretSecretRef`` is defined, this field is required.
+"The TSIG Key name configured in the DNS. If ``tsigSecretSecretRef`` is defined, this field is required."
 
 ## obj spec.solver.dns01.rfc2136.tsigSecretSecretRef
 
-The name of the secret containing the TSIG value. If ``tsigKeyName`` is defined, this field is required.
+"The name of the secret containing the TSIG value. If ``tsigKeyName`` is defined, this field is required."
 
 ### fn spec.solver.dns01.rfc2136.tsigSecretSecretRef.withKey
 
@@ -796,7 +784,7 @@ The name of the secret containing the TSIG value. If ``tsigKeyName`` is defined,
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.rfc2136.tsigSecretSecretRef.withName
 
@@ -804,11 +792,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.route53
 
-Use the AWS Route53 API to manage DNS01 challenge records.
+"Use the AWS Route53 API to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.route53.withAccessKeyID
 
@@ -816,7 +804,7 @@ Use the AWS Route53 API to manage DNS01 challenge records.
 withAccessKeyID(accessKeyID)
 ```
 
-The AccessKeyID is used for authentication. If not set we fall-back to using env vars, shared credentials file or AWS Instance metadata see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+"The AccessKeyID is used for authentication. If not set we fall-back to using env vars, shared credentials file or AWS Instance metadata see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials"
 
 ### fn spec.solver.dns01.route53.withHostedZoneID
 
@@ -824,7 +812,7 @@ The AccessKeyID is used for authentication. If not set we fall-back to using env
 withHostedZoneID(hostedZoneID)
 ```
 
-If set, the provider will manage only this zone in Route53 and will not do an lookup using the route53:ListHostedZonesByName api call.
+"If set, the provider will manage only this zone in Route53 and will not do an lookup using the route53:ListHostedZonesByName api call."
 
 ### fn spec.solver.dns01.route53.withRegion
 
@@ -832,7 +820,7 @@ If set, the provider will manage only this zone in Route53 and will not do an lo
 withRegion(region)
 ```
 
-Always set the region when using AccessKeyID and SecretAccessKey
+"Always set the region when using AccessKeyID and SecretAccessKey"
 
 ### fn spec.solver.dns01.route53.withRole
 
@@ -840,11 +828,11 @@ Always set the region when using AccessKeyID and SecretAccessKey
 withRole(role)
 ```
 
-Role is a Role ARN which the Route53 provider will assume using either the explicit credentials AccessKeyID/SecretAccessKey or the inferred credentials from environment variables, shared credentials file or AWS Instance metadata
+"Role is a Role ARN which the Route53 provider will assume using either the explicit credentials AccessKeyID/SecretAccessKey or the inferred credentials from environment variables, shared credentials file or AWS Instance metadata"
 
 ## obj spec.solver.dns01.route53.secretAccessKeySecretRef
 
-The SecretAccessKey is used for authentication. If not set we fall-back to using env vars, shared credentials file or AWS Instance metadata https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
+"The SecretAccessKey is used for authentication. If not set we fall-back to using env vars, shared credentials file or AWS Instance metadata https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials"
 
 ### fn spec.solver.dns01.route53.secretAccessKeySecretRef.withKey
 
@@ -852,7 +840,7 @@ The SecretAccessKey is used for authentication. If not set we fall-back to using
 withKey(key)
 ```
 
-The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required.
+"The key of the entry in the Secret resource's `data` field to be used. Some instances of this field may be defaulted, in others it may be required."
 
 ### fn spec.solver.dns01.route53.secretAccessKeySecretRef.withName
 
@@ -860,11 +848,11 @@ The key of the entry in the Secret resource's `data` field to be used. Some inst
 withName(name)
 ```
 
-Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+"Name of the resource being referred to. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
 ## obj spec.solver.dns01.webhook
 
-Configure an external webhook based DNS01 challenge solver to manage DNS01 challenge records.
+"Configure an external webhook based DNS01 challenge solver to manage DNS01 challenge records."
 
 ### fn spec.solver.dns01.webhook.withConfig
 
@@ -872,7 +860,7 @@ Configure an external webhook based DNS01 challenge solver to manage DNS01 chall
 withConfig(config)
 ```
 
-Additional configuration that should be passed to the webhook apiserver when challenges are processed. This can contain arbitrary JSON data. Secret values should not be specified in this stanza. If secret values are needed (e.g. credentials for a DNS service), you should use a SecretKeySelector to reference a Secret resource. For details on the schema of this field, consult the webhook provider implementation's documentation.
+"Additional configuration that should be passed to the webhook apiserver when challenges are processed. This can contain arbitrary JSON data. Secret values should not be specified in this stanza. If secret values are needed (e.g. credentials for a DNS service), you should use a SecretKeySelector to reference a Secret resource. For details on the schema of this field, consult the webhook provider implementation's documentation."
 
 ### fn spec.solver.dns01.webhook.withGroupName
 
@@ -880,7 +868,7 @@ Additional configuration that should be passed to the webhook apiserver when cha
 withGroupName(groupName)
 ```
 
-The API group name that should be used when POSTing ChallengePayload resources to the webhook apiserver. This should be the same as the GroupName specified in the webhook provider implementation.
+"The API group name that should be used when POSTing ChallengePayload resources to the webhook apiserver. This should be the same as the GroupName specified in the webhook provider implementation."
 
 ### fn spec.solver.dns01.webhook.withSolverName
 
@@ -888,15 +876,15 @@ The API group name that should be used when POSTing ChallengePayload resources t
 withSolverName(solverName)
 ```
 
-The name of the solver to use, as defined in the webhook provider implementation. This will typically be the name of the provider, e.g. 'cloudflare'.
+"The name of the solver to use, as defined in the webhook provider implementation. This will typically be the name of the provider, e.g. 'cloudflare'."
 
 ## obj spec.solver.http01
 
-Configures cert-manager to attempt to complete authorizations by performing the HTTP01 challenge flow. It is not possible to obtain certificates for wildcard domain names (e.g. `*.example.com`) using the HTTP01 challenge mechanism.
+"Configures cert-manager to attempt to complete authorizations by performing the HTTP01 challenge flow. It is not possible to obtain certificates for wildcard domain names (e.g. `*.example.com`) using the HTTP01 challenge mechanism."
 
 ## obj spec.solver.http01.ingress
 
-The ingress based HTTP01 challenge solver will solve challenges by creating or modifying Ingress resources in order to route requests for '/.well-known/acme-challenge/XYZ' to 'challenge solver' pods that are provisioned by cert-manager for each Challenge to be completed.
+"The ingress based HTTP01 challenge solver will solve challenges by creating or modifying Ingress resources in order to route requests for '/.well-known/acme-challenge/XYZ' to 'challenge solver' pods that are provisioned by cert-manager for each Challenge to be completed."
 
 ### fn spec.solver.http01.ingress.withClass
 
@@ -904,7 +892,7 @@ The ingress based HTTP01 challenge solver will solve challenges by creating or m
 withClass(class)
 ```
 
-The ingress class to use when creating Ingress resources to solve ACME challenges that use this challenge solver. Only one of 'class' or 'name' may be specified.
+"The ingress class to use when creating Ingress resources to solve ACME challenges that use this challenge solver. Only one of 'class' or 'name' may be specified."
 
 ### fn spec.solver.http01.ingress.withName
 
@@ -912,7 +900,7 @@ The ingress class to use when creating Ingress resources to solve ACME challenge
 withName(name)
 ```
 
-The name of the ingress resource that should have ACME challenge solving routes inserted into it in order to solve HTTP01 challenges. This is typically used in conjunction with ingress controllers like ingress-gce, which maintains a 1:1 mapping between external IPs and ingress resources.
+"The name of the ingress resource that should have ACME challenge solving routes inserted into it in order to solve HTTP01 challenges. This is typically used in conjunction with ingress controllers like ingress-gce, which maintains a 1:1 mapping between external IPs and ingress resources."
 
 ### fn spec.solver.http01.ingress.withServiceType
 
@@ -920,15 +908,15 @@ The name of the ingress resource that should have ACME challenge solving routes 
 withServiceType(serviceType)
 ```
 
-Optional service type for Kubernetes solver service
+"Optional service type for Kubernetes solver service"
 
 ## obj spec.solver.http01.ingress.ingressTemplate
 
-Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges
+"Optional ingress template used to configure the ACME challenge solver ingress used for HTTP01 challenges"
 
 ## obj spec.solver.http01.ingress.ingressTemplate.metadata
 
-ObjectMeta overrides for the ingress used to solve HTTP01 challenges. Only the 'labels' and 'annotations' fields may be set. If labels or annotations overlap with in-built values, the values here will override the in-built values.
+"ObjectMeta overrides for the ingress used to solve HTTP01 challenges. Only the 'labels' and 'annotations' fields may be set. If labels or annotations overlap with in-built values, the values here will override the in-built values."
 
 ### fn spec.solver.http01.ingress.ingressTemplate.metadata.withAnnotations
 
@@ -936,7 +924,7 @@ ObjectMeta overrides for the ingress used to solve HTTP01 challenges. Only the '
 withAnnotations(annotations)
 ```
 
-Annotations that should be added to the created ACME HTTP01 solver ingress.
+"Annotations that should be added to the created ACME HTTP01 solver ingress."
 
 ### fn spec.solver.http01.ingress.ingressTemplate.metadata.withAnnotationsMixin
 
@@ -944,7 +932,7 @@ Annotations that should be added to the created ACME HTTP01 solver ingress.
 withAnnotationsMixin(annotations)
 ```
 
-Annotations that should be added to the created ACME HTTP01 solver ingress.
+"Annotations that should be added to the created ACME HTTP01 solver ingress."
 
 **Note:** This function appends passed data to existing values
 
@@ -954,7 +942,7 @@ Annotations that should be added to the created ACME HTTP01 solver ingress.
 withLabels(labels)
 ```
 
-Labels that should be added to the created ACME HTTP01 solver ingress.
+"Labels that should be added to the created ACME HTTP01 solver ingress."
 
 ### fn spec.solver.http01.ingress.ingressTemplate.metadata.withLabelsMixin
 
@@ -962,17 +950,17 @@ Labels that should be added to the created ACME HTTP01 solver ingress.
 withLabelsMixin(labels)
 ```
 
-Labels that should be added to the created ACME HTTP01 solver ingress.
+"Labels that should be added to the created ACME HTTP01 solver ingress."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.http01.ingress.podTemplate
 
-Optional pod template used to configure the ACME challenge solver pods used for HTTP01 challenges
+"Optional pod template used to configure the ACME challenge solver pods used for HTTP01 challenges"
 
 ## obj spec.solver.http01.ingress.podTemplate.metadata
 
-ObjectMeta overrides for the pod used to solve HTTP01 challenges. Only the 'labels' and 'annotations' fields may be set. If labels or annotations overlap with in-built values, the values here will override the in-built values.
+"ObjectMeta overrides for the pod used to solve HTTP01 challenges. Only the 'labels' and 'annotations' fields may be set. If labels or annotations overlap with in-built values, the values here will override the in-built values."
 
 ### fn spec.solver.http01.ingress.podTemplate.metadata.withAnnotations
 
@@ -980,7 +968,7 @@ ObjectMeta overrides for the pod used to solve HTTP01 challenges. Only the 'labe
 withAnnotations(annotations)
 ```
 
-Annotations that should be added to the create ACME HTTP01 solver pods.
+"Annotations that should be added to the create ACME HTTP01 solver pods."
 
 ### fn spec.solver.http01.ingress.podTemplate.metadata.withAnnotationsMixin
 
@@ -988,7 +976,7 @@ Annotations that should be added to the create ACME HTTP01 solver pods.
 withAnnotationsMixin(annotations)
 ```
 
-Annotations that should be added to the create ACME HTTP01 solver pods.
+"Annotations that should be added to the create ACME HTTP01 solver pods."
 
 **Note:** This function appends passed data to existing values
 
@@ -998,7 +986,7 @@ Annotations that should be added to the create ACME HTTP01 solver pods.
 withLabels(labels)
 ```
 
-Labels that should be added to the created ACME HTTP01 solver pods.
+"Labels that should be added to the created ACME HTTP01 solver pods."
 
 ### fn spec.solver.http01.ingress.podTemplate.metadata.withLabelsMixin
 
@@ -1006,13 +994,13 @@ Labels that should be added to the created ACME HTTP01 solver pods.
 withLabelsMixin(labels)
 ```
 
-Labels that should be added to the created ACME HTTP01 solver pods.
+"Labels that should be added to the created ACME HTTP01 solver pods."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.http01.ingress.podTemplate.spec
 
-PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorityClassName', 'nodeSelector', 'affinity', 'serviceAccountName' and 'tolerations' fields are supported currently. All other fields will be ignored.
+"PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorityClassName', 'nodeSelector', 'affinity', 'serviceAccountName' and 'tolerations' fields are supported currently. All other fields will be ignored."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.withNodeSelector
 
@@ -1020,7 +1008,7 @@ PodSpec defines overrides for the HTTP01 challenge solver pod. Only the 'priorit
 withNodeSelector(nodeSelector)
 ```
 
-NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+"NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/"
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.withNodeSelectorMixin
 
@@ -1028,7 +1016,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node. Sele
 withNodeSelectorMixin(nodeSelector)
 ```
 
-NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+"NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/"
 
 **Note:** This function appends passed data to existing values
 
@@ -1038,7 +1026,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node. Sele
 withPriorityClassName(priorityClassName)
 ```
 
-If specified, the pod's priorityClassName.
+"If specified, the pod's priorityClassName."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.withServiceAccountName
 
@@ -1046,7 +1034,7 @@ If specified, the pod's priorityClassName.
 withServiceAccountName(serviceAccountName)
 ```
 
-If specified, the pod's service account
+"If specified, the pod's service account"
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.withTolerations
 
@@ -1054,7 +1042,7 @@ If specified, the pod's service account
 withTolerations(tolerations)
 ```
 
-If specified, the pod's tolerations.
+"If specified, the pod's tolerations."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.withTolerationsMixin
 
@@ -1062,17 +1050,17 @@ If specified, the pod's tolerations.
 withTolerationsMixin(tolerations)
 ```
 
-If specified, the pod's tolerations.
+"If specified, the pod's tolerations."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity
 
-If specified, the pod's scheduling constraints
+"If specified, the pod's scheduling constraints"
 
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity
 
-Describes node affinity scheduling rules for the pod.
+"Describes node affinity scheduling rules for the pod."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -1080,7 +1068,7 @@ Describes node affinity scheduling rules for the pod.
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1088,13 +1076,13 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNodeSelectorTerms
 
@@ -1102,7 +1090,7 @@ If the affinity requirements specified by this field are not met at scheduling t
 withNodeSelectorTerms(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNodeSelectorTermsMixin
 
@@ -1110,13 +1098,13 @@ Required. A list of node selector terms. The terms are ORed.
 withNodeSelectorTermsMixin(nodeSelectorTerms)
 ```
 
-Required. A list of node selector terms. The terms are ORed.
+"Required. A list of node selector terms. The terms are ORed."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity
 
-Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).
+"Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s))."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -1124,7 +1112,7 @@ Describes pod affinity scheduling rules (e.g. co-locate this pod in the same nod
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1132,7 +1120,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
@@ -1142,7 +1130,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the affinity ex
 withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.withRequiredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1150,13 +1138,13 @@ If the affinity requirements specified by this field are not met at scheduling t
 withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity
 
-Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).
+"Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s))."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.withPreferredDuringSchedulingIgnoredDuringExecution
 
@@ -1164,7 +1152,7 @@ Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the
 withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.withPreferredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1172,7 +1160,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the anti-affini
 withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)
 ```
 
-The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
 
 **Note:** This function appends passed data to existing values
 
@@ -1182,7 +1170,7 @@ The scheduler will prefer to schedule pods to nodes that satisfy the anti-affini
 withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 ### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.withRequiredDuringSchedulingIgnoredDuringExecutionMixin
 
@@ -1190,13 +1178,13 @@ If the anti-affinity requirements specified by this field are not met at schedul
 withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)
 ```
 
-If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.solver.selector
 
-Selector selects a set of DNSNames on the Certificate resource that should be solved using this challenge solver. If not specified, the solver will be treated as the 'default' solver with the lowest priority, i.e. if any other solver has a more specific match, it will be used instead.
+"Selector selects a set of DNSNames on the Certificate resource that should be solved using this challenge solver. If not specified, the solver will be treated as the 'default' solver with the lowest priority, i.e. if any other solver has a more specific match, it will be used instead."
 
 ### fn spec.solver.selector.withDnsNames
 
@@ -1204,7 +1192,7 @@ Selector selects a set of DNSNames on the Certificate resource that should be so
 withDnsNames(dnsNames)
 ```
 
-List of DNSNames that this solver will be used to solve. If specified and a match is found, a dnsNames selector will take precedence over a dnsZones selector. If multiple solvers match with the same dnsNames value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.
+"List of DNSNames that this solver will be used to solve. If specified and a match is found, a dnsNames selector will take precedence over a dnsZones selector. If multiple solvers match with the same dnsNames value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected."
 
 ### fn spec.solver.selector.withDnsNamesMixin
 
@@ -1212,7 +1200,7 @@ List of DNSNames that this solver will be used to solve. If specified and a matc
 withDnsNamesMixin(dnsNames)
 ```
 
-List of DNSNames that this solver will be used to solve. If specified and a match is found, a dnsNames selector will take precedence over a dnsZones selector. If multiple solvers match with the same dnsNames value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.
+"List of DNSNames that this solver will be used to solve. If specified and a match is found, a dnsNames selector will take precedence over a dnsZones selector. If multiple solvers match with the same dnsNames value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected."
 
 **Note:** This function appends passed data to existing values
 
@@ -1222,7 +1210,7 @@ List of DNSNames that this solver will be used to solve. If specified and a matc
 withDnsZones(dnsZones)
 ```
 
-List of DNSZones that this solver will be used to solve. The most specific DNS zone match specified here will take precedence over other DNS zone matches, so a solver specifying sys.example.com will be selected over one specifying example.com for the domain www.sys.example.com. If multiple solvers match with the same dnsZones value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.
+"List of DNSZones that this solver will be used to solve. The most specific DNS zone match specified here will take precedence over other DNS zone matches, so a solver specifying sys.example.com will be selected over one specifying example.com for the domain www.sys.example.com. If multiple solvers match with the same dnsZones value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected."
 
 ### fn spec.solver.selector.withDnsZonesMixin
 
@@ -1230,7 +1218,7 @@ List of DNSZones that this solver will be used to solve. The most specific DNS z
 withDnsZonesMixin(dnsZones)
 ```
 
-List of DNSZones that this solver will be used to solve. The most specific DNS zone match specified here will take precedence over other DNS zone matches, so a solver specifying sys.example.com will be selected over one specifying example.com for the domain www.sys.example.com. If multiple solvers match with the same dnsZones value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected.
+"List of DNSZones that this solver will be used to solve. The most specific DNS zone match specified here will take precedence over other DNS zone matches, so a solver specifying sys.example.com will be selected over one specifying example.com for the domain www.sys.example.com. If multiple solvers match with the same dnsZones value, the solver with the most matching labels in matchLabels will be selected. If neither has more matches, the solver defined earlier in the list will be selected."
 
 **Note:** This function appends passed data to existing values
 
@@ -1240,7 +1228,7 @@ List of DNSZones that this solver will be used to solve. The most specific DNS z
 withMatchLabels(matchLabels)
 ```
 
-A label selector that is used to refine the set of certificate's that this challenge solver will apply to.
+"A label selector that is used to refine the set of certificate's that this challenge solver will apply to."
 
 ### fn spec.solver.selector.withMatchLabelsMixin
 
@@ -1248,6 +1236,6 @@ A label selector that is used to refine the set of certificate's that this chall
 withMatchLabelsMixin(matchLabels)
 ```
 
-A label selector that is used to refine the set of certificate's that this challenge solver will apply to.
+"A label selector that is used to refine the set of certificate's that this challenge solver will apply to."
 
 **Note:** This function appends passed data to existing values
