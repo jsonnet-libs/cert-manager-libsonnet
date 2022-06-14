@@ -22,8 +22,6 @@ permalink: /1.7/acme/v1/challenge/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -144,19 +142,157 @@ permalink: /1.7/acme/v1/challenge/
               * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinity)
                 * [`fn withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitywithpreferredduringschedulingignoredduringexecution)
                 * [`fn withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitywithpreferredduringschedulingignoredduringexecutionmixin)
+                * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecution)
+                  * [`fn withWeight(weight)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionwithweight)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreference)
+                    * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencewithmatchexpressions)
+                    * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencewithmatchexpressionsmixin)
+                    * [`fn withMatchFields(matchFields)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencewithmatchfields)
+                    * [`fn withMatchFieldsMixin(matchFields)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencewithmatchfieldsmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchexpressions)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchexpressionswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchexpressionswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchexpressionswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchexpressionswithvaluesmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchfields)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchfieldswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchfieldswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchfieldswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionpreferencematchfieldswithvaluesmixin)
                 * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecution)
                   * [`fn withNodeSelectorTerms(nodeSelectorTerms)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionwithnodeselectorterms)
                   * [`fn withNodeSelectorTermsMixin(nodeSelectorTerms)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionwithnodeselectortermsmixin)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectorterms)
+                    * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermswithmatchexpressions)
+                    * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermswithmatchexpressionsmixin)
+                    * [`fn withMatchFields(matchFields)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermswithmatchfields)
+                    * [`fn withMatchFieldsMixin(matchFields)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermswithmatchfieldsmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchexpressions)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchexpressionswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchexpressionswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchexpressionswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchexpressionswithvaluesmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields`](#obj-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchfields)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchfieldswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchfieldswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchfieldswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitynodeaffinityrequiredduringschedulingignoredduringexecutionnodeselectortermsmatchfieldswithvaluesmixin)
               * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinity)
                 * [`fn withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitywithpreferredduringschedulingignoredduringexecution)
                 * [`fn withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitywithpreferredduringschedulingignoredduringexecutionmixin)
                 * [`fn withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitywithrequiredduringschedulingignoredduringexecution)
                 * [`fn withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitywithrequiredduringschedulingignoredduringexecutionmixin)
+                * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecution)
+                  * [`fn withWeight(weight)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionwithweight)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinityterm)
+                    * [`fn withNamespaces(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermwithnamespaces)
+                    * [`fn withNamespacesMixin(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermwithnamespacesmixin)
+                    * [`fn withTopologyKey(topologyKey)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermwithtopologykey)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselector)
+                      * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchexpressions)
+                      * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchexpressionsmixin)
+                      * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchlabels)
+                      * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchlabelsmixin)
+                      * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressions)
+                        * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithkey)
+                        * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithoperator)
+                        * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithvalues)
+                        * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithvaluesmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselector)
+                      * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchexpressions)
+                      * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchexpressionsmixin)
+                      * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchlabels)
+                      * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchlabelsmixin)
+                      * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressions)
+                        * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithkey)
+                        * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithoperator)
+                        * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithvalues)
+                        * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithvaluesmixin)
+                * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecution)
+                  * [`fn withNamespaces(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionwithnamespaces)
+                  * [`fn withNamespacesMixin(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionwithnamespacesmixin)
+                  * [`fn withTopologyKey(topologyKey)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionwithtopologykey)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselector)
+                    * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchexpressions)
+                    * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchexpressionsmixin)
+                    * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchlabels)
+                    * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchlabelsmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressions)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithvaluesmixin)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselector)
+                    * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchexpressions)
+                    * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchexpressionsmixin)
+                    * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchlabels)
+                    * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchlabelsmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressions)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithvaluesmixin)
               * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinity)
                 * [`fn withPreferredDuringSchedulingIgnoredDuringExecution(preferredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitywithpreferredduringschedulingignoredduringexecution)
                 * [`fn withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitywithpreferredduringschedulingignoredduringexecutionmixin)
                 * [`fn withRequiredDuringSchedulingIgnoredDuringExecution(requiredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitywithrequiredduringschedulingignoredduringexecution)
                 * [`fn withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringSchedulingIgnoredDuringExecution)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitywithrequiredduringschedulingignoredduringexecutionmixin)
+                * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecution)
+                  * [`fn withWeight(weight)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionwithweight)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinityterm)
+                    * [`fn withNamespaces(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermwithnamespaces)
+                    * [`fn withNamespacesMixin(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermwithnamespacesmixin)
+                    * [`fn withTopologyKey(topologyKey)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermwithtopologykey)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselector)
+                      * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchexpressions)
+                      * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchexpressionsmixin)
+                      * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchlabels)
+                      * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectorwithmatchlabelsmixin)
+                      * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressions)
+                        * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithkey)
+                        * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithoperator)
+                        * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithvalues)
+                        * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermlabelselectormatchexpressionswithvaluesmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselector)
+                      * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchexpressions)
+                      * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchexpressionsmixin)
+                      * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchlabels)
+                      * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectorwithmatchlabelsmixin)
+                      * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressions)
+                        * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithkey)
+                        * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithoperator)
+                        * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithvalues)
+                        * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionpodaffinitytermnamespaceselectormatchexpressionswithvaluesmixin)
+                * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecution)
+                  * [`fn withNamespaces(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionwithnamespaces)
+                  * [`fn withNamespacesMixin(namespaces)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionwithnamespacesmixin)
+                  * [`fn withTopologyKey(topologyKey)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionwithtopologykey)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselector)
+                    * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchexpressions)
+                    * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchexpressionsmixin)
+                    * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchlabels)
+                    * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectorwithmatchlabelsmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressions)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionlabelselectormatchexpressionswithvaluesmixin)
+                  * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselector)
+                    * [`fn withMatchExpressions(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchexpressions)
+                    * [`fn withMatchExpressionsMixin(matchExpressions)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchexpressionsmixin)
+                    * [`fn withMatchLabels(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchlabels)
+                    * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectorwithmatchlabelsmixin)
+                    * [`obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions`](#obj-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressions)
+                      * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithkey)
+                      * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithoperator)
+                      * [`fn withValues(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithvalues)
+                      * [`fn withValuesMixin(values)`](#fn-specsolverhttp01ingresspodtemplatespecaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionnamespaceselectormatchexpressionswithvaluesmixin)
+            * [`obj spec.solver.http01.ingress.podTemplate.spec.tolerations`](#obj-specsolverhttp01ingresspodtemplatespectolerations)
+              * [`fn withEffect(effect)`](#fn-specsolverhttp01ingresspodtemplatespectolerationswitheffect)
+              * [`fn withKey(key)`](#fn-specsolverhttp01ingresspodtemplatespectolerationswithkey)
+              * [`fn withOperator(operator)`](#fn-specsolverhttp01ingresspodtemplatespectolerationswithoperator)
+              * [`fn withTolerationSeconds(tolerationSeconds)`](#fn-specsolverhttp01ingresspodtemplatespectolerationswithtolerationseconds)
+              * [`fn withValue(value)`](#fn-specsolverhttp01ingresspodtemplatespectolerationswithvalue)
     * [`obj spec.solver.selector`](#obj-specsolverselector)
       * [`fn withDnsNames(dnsNames)`](#fn-specsolverselectorwithdnsnames)
       * [`fn withDnsNamesMixin(dnsNames)`](#fn-specsolverselectorwithdnsnamesmixin)
@@ -278,24 +414,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -1137,6 +1255,134 @@ withPreferredDuringSchedulingIgnoredDuringExecutionMixin(preferredDuringScheduli
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution
+
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.withWeight
+
+```ts
+withWeight(weight)
+```
+
+"Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference
+
+"A node selector term, associated with the corresponding weight."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"A list of node selector requirements by node's labels."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"A list of node selector requirements by node's labels."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.withMatchFields
+
+```ts
+withMatchFields(matchFields)
+```
+
+"A list of node selector requirements by node's fields."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.withMatchFieldsMixin
+
+```ts
+withMatchFieldsMixin(matchFields)
+```
+
+"A list of node selector requirements by node's fields."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions
+
+"A list of node selector requirements by node's labels."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"The label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields
+
+"A list of node selector requirements by node's fields."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.withKey
+
+```ts
+withKey(key)
+```
+
+"The label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.withValues
+
+```ts
+withValues(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.preferredDuringSchedulingIgnoredDuringExecution.preference.matchFields.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution
 
 "If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node."
@@ -1156,6 +1402,122 @@ withNodeSelectorTermsMixin(nodeSelectorTerms)
 ```
 
 "Required. A list of node selector terms. The terms are ORed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms
+
+"Required. A list of node selector terms. The terms are ORed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"A list of node selector requirements by node's labels."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"A list of node selector requirements by node's labels."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.withMatchFields
+
+```ts
+withMatchFields(matchFields)
+```
+
+"A list of node selector requirements by node's fields."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.withMatchFieldsMixin
+
+```ts
+withMatchFieldsMixin(matchFields)
+```
+
+"A list of node selector requirements by node's fields."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions
+
+"A list of node selector requirements by node's labels."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"The label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields
+
+"A list of node selector requirements by node's fields."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.withKey
+
+```ts
+withKey(key)
+```
+
+"The label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.withValues
+
+```ts
+withValues(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms.matchFields.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch."
 
 **Note:** This function appends passed data to existing values
 
@@ -1199,6 +1561,390 @@ withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringScheduling
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution
+
+"The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.withWeight
+
+```ts
+withWeight(weight)
+```
+
+"weight associated with matching the corresponding podAffinityTerm, in the range 1-100."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm
+
+"Required. A pod affinity term, associated with the corresponding weight."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.withNamespaces
+
+```ts
+withNamespaces(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.withNamespacesMixin
+
+```ts
+withNamespacesMixin(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.withTopologyKey
+
+```ts
+withTopologyKey(topologyKey)
+```
+
+"This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector
+
+"A label query over a set of resources, in this case pods."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector
+
+"A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution
+
+"If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNamespaces
+
+```ts
+withNamespaces(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNamespacesMixin
+
+```ts
+withNamespacesMixin(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.withTopologyKey
+
+```ts
+withTopologyKey(topologyKey)
+```
+
+"This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector
+
+"A label query over a set of resources, in this case pods."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector
+
+"A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
 ## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity
 
 "Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s))."
@@ -1238,6 +1984,434 @@ withRequiredDuringSchedulingIgnoredDuringExecutionMixin(requiredDuringScheduling
 "If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution
+
+"The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding \"weight\" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.withWeight
+
+```ts
+withWeight(weight)
+```
+
+"weight associated with matching the corresponding podAffinityTerm, in the range 1-100."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm
+
+"Required. A pod affinity term, associated with the corresponding weight."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.withNamespaces
+
+```ts
+withNamespaces(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.withNamespacesMixin
+
+```ts
+withNamespacesMixin(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.withTopologyKey
+
+```ts
+withTopologyKey(topologyKey)
+```
+
+"This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector
+
+"A label query over a set of resources, in this case pods."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.labelSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector
+
+"A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution.podAffinityTerm.namespaceSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution
+
+"If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNamespaces
+
+```ts
+withNamespaces(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.withNamespacesMixin
+
+```ts
+withNamespacesMixin(namespaces)
+```
+
+"namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means \"this pod's namespace\
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.withTopologyKey
+
+```ts
+withTopologyKey(topologyKey)
+```
+
+"This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed."
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector
+
+"A label query over a set of resources, in this case pods."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.labelSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector
+
+"A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means \"this pod's namespace\". An empty selector ({}) matches all namespaces. This field is beta-level and is only honored when PodAffinityNamespaceSelector feature is enabled."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchExpressions
+
+```ts
+withMatchExpressions(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchExpressionsMixin
+
+```ts
+withMatchExpressionsMixin(matchExpressions)
+```
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions
+
+"matchExpressions is a list of label selector requirements. The requirements are ANDed."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withKey
+
+```ts
+withKey(key)
+```
+
+"key is the label key that the selector applies to."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withValues
+
+```ts
+withValues(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.affinity.podAntiAffinity.requiredDuringSchedulingIgnoredDuringExecution.namespaceSelector.matchExpressions.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.solver.http01.ingress.podTemplate.spec.tolerations
+
+"If specified, the pod's tolerations."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.tolerations.withEffect
+
+```ts
+withEffect(effect)
+```
+
+"Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.tolerations.withKey
+
+```ts
+withKey(key)
+```
+
+"Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.tolerations.withOperator
+
+```ts
+withOperator(operator)
+```
+
+"Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.tolerations.withTolerationSeconds
+
+```ts
+withTolerationSeconds(tolerationSeconds)
+```
+
+"TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system."
+
+### fn spec.solver.http01.ingress.podTemplate.spec.tolerations.withValue
+
+```ts
+withValue(value)
+```
+
+"Value is the taint value the toleration matches to. If the operator is Exists, the value should be empty, otherwise just a regular string."
 
 ## obj spec.solver.selector
 
