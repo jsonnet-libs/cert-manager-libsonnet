@@ -47,7 +47,7 @@
     apiVersion: 'cert-manager.io/v1',
     kind: 'ClusterIssuer',
   } + self.metadata.withName(name=name) + self.metadata.withAnnotations(annotations={
-    'tanka.dev/namespaced': 'true',
+    'tanka.dev/namespaced': 'false',
   }),
   '#spec':: d.obj(help='"Desired state of the ClusterIssuer resource."'),
   spec: {
