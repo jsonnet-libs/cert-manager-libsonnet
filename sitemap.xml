@@ -2,138 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/acme/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/acme/v1/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/acme/v1/challenge/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/acme/v1/order/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/nogroup/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/nogroup/v1/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/nogroup/v1/certificate/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/nogroup/v1/certificateRequest/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/nogroup/v1/clusterIssuer/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.17/nogroup/v1/issuer/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/acme/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/acme/v1/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/acme/v1/challenge/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/acme/v1/order/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/nogroup/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/nogroup/v1/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/nogroup/v1/certificate/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/nogroup/v1/certificateRequest/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/nogroup/v1/clusterIssuer/</loc>
-         <lastmod>2026-01-19</lastmod>
-    </url>
-    <url>
-         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.18/nogroup/v1/issuer/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/acme/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/acme/v1/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/acme/v1/challenge/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/acme/v1/order/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/nogroup/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/nogroup/v1/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/nogroup/v1/certificate/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/nogroup/v1/certificateRequest/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/nogroup/v1/clusterIssuer/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.19/nogroup/v1/issuer/</loc>
-         <lastmod>2026-01-19</lastmod>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/acme/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/acme/v1/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/acme/v1/challenge/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/acme/v1/order/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/nogroup/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/nogroup/v1/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/nogroup/v1/certificate/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/nogroup/v1/certificateRequest/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/nogroup/v1/clusterIssuer/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.20/nogroup/v1/issuer/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/acme/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/acme/v1/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/acme/v1/challenge/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/acme/v1/order/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/nogroup/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/nogroup/v1/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/nogroup/v1/certificate/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/nogroup/v1/certificateRequest/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/nogroup/v1/clusterIssuer/</loc>
+         <lastmod>2026-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/cert-manager-libsonnet/1.21/nogroup/v1/issuer/</loc>
+         <lastmod>2026-09-14</lastmod>
     </url>
 </urlset>
